@@ -12,6 +12,7 @@ public class ArraysExercise {
         int[] first = new int[3]; // 0, 0, 0
         int[] second = {}; // nothing - empty list
         int[] third = null; // null pointer when try and print
+        int[] b = new int[0];
 
         // change elements in a char array
         char[] chars = {'a', 'b', 'c', 'd'};

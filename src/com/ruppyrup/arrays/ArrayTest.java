@@ -2,7 +2,6 @@ package com.ruppyrup.arrays;
 
 import com.ruppyrup.foo.FooClass;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayTest {
@@ -43,16 +42,19 @@ public class ArrayTest {
 
         Number[] na = {1, 2, 3,};
         na[0] = new Float(1.2f); // Number is superclass of Float
+        System.out.println("--------------------");
 
-        int[] ca1 = {0, 1, 2, 4};
+        int[] ca1 = {0, 1, 3, 2};
         int[] ca2 = {0, 1, 2, 3};
         int[] ca3 = {0, 1, 4, 2};
-        System.out.println(Arrays.compare(ca1, ca2)); // -1
+        System.out.println(Arrays.equals(ca1, ca2)); // -1
         System.out.println(Arrays.compare(ca1, ca3)); // -1
         System.out.println(Arrays.mismatch(ca1, ca2)); //3 is first mismatch
         System.out.println(Arrays.mismatch(ca1, ca3)); // 2 is first mismatch
 
         Arrays.equals(ca1, 0, 3, ca3, 0, 3);
+
+        System.out.println("-----------------");
 
 
         int[][] iaa = new int[2][3]; // array of length 2 which contains 3 element arrays. Elements set to 0

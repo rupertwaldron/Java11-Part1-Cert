@@ -51,6 +51,9 @@ public class Methods {
     public static void main(String[] args) throws Exception {
         processData(10L); // compiler error
         System.out.println(Methods.add(5, 4));
+
+        String me = (String) getString();
+        System.out.println(me);
     }
 
     static void processData(Long... values) {
@@ -59,6 +62,16 @@ public class Methods {
     static void processData(Long value) {
         System.out.println("autoboxing");
     }
+
+    static Object getString() {
+        return "Object";
+    }
+
+    static String getObject() {
+        return (String) new Object();
+    }
+
+
 
 
 }

@@ -94,6 +94,9 @@ public class WhileLoop {
 //        BAD2: x++; // doesn't work as not a statement'
 //        BAD3: public void m1() {}; // can't apply labels to methods
 
+        int a = 1;
+
+        GOOD: a = 2;
 
         MYLABEL: {
             System.out.println("1 ");

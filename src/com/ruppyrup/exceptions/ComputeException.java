@@ -15,9 +15,9 @@ public class ComputeException {
         } catch (Exception ex) {
             return "Found Exception";
         }
-//        finally {
-//            return "This is the end"; // just prints this
-//        }
+        finally {
+            return "This is the end"; // just prints this
+        }
     }
 
     public static double computeInterest(double p, double r, int t) throws IllegalArgumentException {

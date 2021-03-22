@@ -10,6 +10,9 @@ public class LatestList {
         var a1 = new ArrayList<Integer>(50); // initial capacity 50
         a1.add(null);
         a1.add(0, 3);
+        final List<String> a = List.of("a", "b", "c");
+//        a.add("d"); // unsupported operation exception
+
         ArrayList<String> a12 = new ArrayList<>(list); // copying list 0bserve the diamond operator
         System.out.println(a1);
 

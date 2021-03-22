@@ -1,4 +1,6 @@
-package com.ruppyrup.inheritance;
+package com.ruppyrup.inheritance.calculate;
+
+import com.ruppyrup.inheritance.SubCalculate;
 
 public class SubSubCalculate extends SubCalculate {
     @Override
@@ -14,7 +16,7 @@ public class SubSubCalculate extends SubCalculate {
         System.out.println("Super = " + a);
         System.out.println("this = " + b);
         System.out.println("nothing = " + c);
-        superClassMethodNotOverridden();
+        //superClassMethodNotOverridden(); can't access from different package
     }
 
     public static void main(String[] args) {
@@ -22,6 +24,6 @@ public class SubSubCalculate extends SubCalculate {
         var a = 20;
         var b = 8;
         sum.testCalc(a, b);
-        sum.superClassMethodNotOverridden(); // inherited from Calculate class - because it isn't overridden
+       // sum.superClassMethodNotOverridden();
     }
 }

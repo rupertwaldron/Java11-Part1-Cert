@@ -4,7 +4,11 @@ public class AccountTest {
     public static void main(String[] args) {
         MainAccount a = new DummyAccount(10.0); // no balance in dummy account as method is overridden
         // also get 10.0 as then call the super.printBalance() method from subclass
+
+        System.out.println("Block");
     }
+
+
 }
 
 class MainAccount {
@@ -28,7 +32,7 @@ class DummyAccount extends MainAccount{
     }
 
     void printBalance() {
-        System.out.println("No balance in dummy account");
+        System.out.println("No balance in dummy account : " + balance);
         super.printBalance();
     }
 }

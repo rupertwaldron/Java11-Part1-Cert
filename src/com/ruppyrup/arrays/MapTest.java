@@ -10,6 +10,7 @@ public class MapTest {
         System.out.println(idName.get(2)); // Nikki
         System.out.println(idName.getOrDefault(4, "Unknown")); // unknown
         idName.values().stream().map(String::toUpperCase).forEach(System.out::println); // prints uppercase list
+        idName.forEach((k, v) -> System.out.println(k + " :: " + v));
         System.out.println(idName.remove(1)); // throws exception because immutable
     }
 }

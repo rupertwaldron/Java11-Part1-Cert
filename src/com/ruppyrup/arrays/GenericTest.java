@@ -22,6 +22,11 @@ public class GenericTest {
         System.out.println(a1); // [a, b, c, d, x, e] a1 is modified if you modify the sublist
         a1.add("y"); // structural modification to the original list
         System.out.println(a2); // throws java.util.ConcurrentModifcationException
+
+        List<? super Coin> coins = new ArrayList<>();
+        coins.add(new Coin());
+        coins.add(new Sovereign());
+        System.out.println(coins);
     }
 
 
@@ -48,6 +53,10 @@ class RRGeneric {
 }
 
 class Coin {
+}
+
+class Sovereign extends Coin {
+
 }
 
 class ListProcecessor {

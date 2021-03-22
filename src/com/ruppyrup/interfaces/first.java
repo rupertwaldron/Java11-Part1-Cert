@@ -16,6 +16,11 @@ public class first implements Moveable, Readable {
 
 interface Moveable {
     void move(); // normal abstract method
+    public static final int bob = 10;
+    public static enum Test {
+        TDD,
+        BDD
+    }
 }
 
 interface Readable {
@@ -51,5 +56,6 @@ class StockPrice extends Price implements Printable {
         // which hides the Printable version
         //StockPrice.test(); //can/t call this method
         Printable.print(); // can call print from the interface
+        System.out.println(Moveable.Test.BDD);
     }
 }

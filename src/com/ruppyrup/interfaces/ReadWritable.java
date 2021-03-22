@@ -8,10 +8,14 @@ interface Reading {
     }
 
     default void defaultMethod() {
-        System.out.println("In reading default method");
+        System.out.println("In reading default method" + getSize());
     }
 
     void read();
+
+    private int getSize() {
+        return SIZE;
+    }
 }
 
 

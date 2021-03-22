@@ -74,5 +74,8 @@ class TestFurniture {
         make(chair); // Table is made of Rubber
         chair.printManufacturer(); // Can't override this method
 //        table.thisYearsColor(); // Won't compile as subclasses can't access private methods
+
+        Chair testChair = new Chair();
+        testChair.getCountry();
     }
 }
